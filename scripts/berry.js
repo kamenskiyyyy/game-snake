@@ -1,5 +1,5 @@
-import Config from "./config";
-import {getRandomInt} from "./supportFunction";
+import Config from "./config.js";
+import {getRandomInt} from "./supportFunction.js";
 
 export default class Berry {
     constructor(canvas) {
@@ -19,7 +19,8 @@ export default class Berry {
     }
 
     randomPosition() {
-        this.x = getRandomInt( 0, this.canvas.width / this.config.sizeCell ) * this.config.sizeCell;
-        this.y = getRandomInt( 0, this.canvas.height / this.config.sizeCell ) * this.config.sizeCell;
+        this.x = getRandomInt( 0, this.canvas.element.width / this.config.sizeCell ) * this.config.sizeCell;
+        this.y = getRandomInt( 0, this.canvas.element.height / this.config.sizeCell ) * this.config.sizeCell;
     }
+
 }

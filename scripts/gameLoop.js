@@ -1,4 +1,4 @@
-import Config from "./config";
+import Config from "./config.js";
 
 export default class GameLoop {
     constructor(update, draw) {
@@ -12,8 +12,8 @@ export default class GameLoop {
     }
 
     animate() {
-        requestAnimationFrame( this.animate );
-        if ( ++this.config.step < this.config.maxStep) {
+        requestAnimationFrame(this.animate);
+        if (++this.config.step < this.config.maxStep) {
             return;
         }
         this.config.step = 0;
