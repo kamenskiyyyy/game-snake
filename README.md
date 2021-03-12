@@ -1,2 +1,5 @@
-# game-snake
- Игра змейка на JS
+# snake2d
+Простая игра змейка на JavaScript(без библиотек)
+
+
+> ![Screen 1](screen/welcome.png)
